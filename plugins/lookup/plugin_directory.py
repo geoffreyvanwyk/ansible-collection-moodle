@@ -94,9 +94,13 @@ class LookupModule(LookupBase):
 
         frankenstyle_name = str(self.get_option("frankenstyle_name"))
         plugin_type, plugin_name = frankenstyle_name.split("_", maxsplit=1)
-        if len(plugin_type) == 0 or len(plugin_name) == 0:
-            raise AnsibleLookupError("Invalid frankenstyle name")
+
+        plugin_type = plugin_type.strip()
         if plugin_type not in directory_per_plugin_type.keys():
             raise AnsibleLookupError("Invalid plugin type")
+
+        plugin_name = plugin_name.strip()
+        if len(plugin_name) == 0:
+            raise AnsibleLookupError("Invalid plugin name")
 
         return [directory_per_plugin_type[plugin_type] + "/" + plugin_name]

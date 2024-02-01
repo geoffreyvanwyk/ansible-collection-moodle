@@ -20,7 +20,7 @@ readme: README.md
 # format: 'Full Name <email> (url)
 # @nicks:irc/im.site#channel'
 authors:
-  - Geoffrey Bernardo van Wyk <geoffrey@vanwyk.biz> (https://geoffreyvanwyk.dev)
+  - Geoffrey Bernardo van Wyk (https://geoffreyvanwyk.dev)
 
 ### OPTIONAL but strongly recommended
 # A short summary description of the collection

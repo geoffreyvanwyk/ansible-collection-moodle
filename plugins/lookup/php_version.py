@@ -25,7 +25,7 @@
 DOCUMENTATION = """
 name: php_version
 author: Geoffrey Bernardo van Wyk (https://geoffreyvanwyk.dev)
-version_added: "1.0.0"
+version_added: 1.0.0
 short_description: Latest PHP version compatible with given Moodle version
 description:
   - This lookup plugin retrieves the latest PHP version that is compatible with

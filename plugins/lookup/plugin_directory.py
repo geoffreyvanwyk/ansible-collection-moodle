@@ -20,13 +20,12 @@
 # based on the frankenstyle name of the plugin.
 #
 # @copyright  2024 Geoffrey Bernardo van Wyk {@link https://geoffreyvanwyk.dev}
-# @link       https://moodledev.io/general/releases
 ##
 
 DOCUMENTATION = """
 name: plugin_directory
 author: Geoffrey Bernardo van Wyk (https://geoffreyvanwyk.dev)
-version_added: "1.0.0"
+version_added: 1.0.0
 short_description: Path to plugin installation directory 
 description:
   - This lookup plugin retrieves the path to a Moodle plugin's installation

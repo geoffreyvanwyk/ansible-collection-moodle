@@ -36,7 +36,7 @@ options:
       - The Moodle version for which to retrieve the PHP version.
     type: str
     required: true
-    choices: ['3.9', '3.10', '3.11', '4.0', '4.1', '4.2', '4.3']
+    choices: ['3.9', '3.10', '3.11', '4.0', '4.1', '4.2', '4.3', '4.4']
 """
 
 EXAMPLES = """
@@ -67,6 +67,7 @@ class LookupModule(LookupBase):
             "4.1": ["8.1"],
             "4.2": ["8.2"],
             "4.3": ["8.2"],
+            "4.4": ["8.3"],
         }
 
         self.set_options(var_options=variables, direct=kwargs)
